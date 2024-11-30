@@ -1,0 +1,21 @@
+{
+  "name": "js-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-rtl": "^3.3.4",
+    "jquery": "^3.7.1",
+    "json-server": "^1.0.0-beta.2",
+    "swiper": "^11.1.14"
+  },
+  "description": ""
+}

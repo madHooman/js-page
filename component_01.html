@@ -1,0 +1,630 @@
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="plugin-dropdown__hover/css/animate.min.css">
+    <link rel="stylesheet" href="plugin-dropdown__hover/css/bootstrap-dropdownhover.min.css">
+    <link rel="stylesheet" href="css/my-custom-slider.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+
+
+   <section class="modal fade" id="modal_1">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <span class="close" data-dismiss="modal">&times;</span>
+                   <h2 class="text-center text-muted">welcome to my site</h2>
+                   <hr>
+
+               </div>
+               <div class="modal-body">
+
+                 <div class="row">
+                     <div class="col-lg-6">
+                         <form action="" method="">
+                            <fieldset>
+                                <legend class="text-center">Signup</legend>
+                                <div class="form-group">
+                                    <label for="">username</label>
+                                    <input type="text" placeholder="Username" class="form-control">
+                                </div>
+
+                               <!-- <div class="form-group input-group has-error input-group-sm">
+                                   <div class="input-group-addon">
+                                       <span class="glyphicon glyphicon-user"></span>
+                                   </div>
+                                    <input type="text" class="form-control">
+                                </div>-->
+
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" placeholder="Email" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">password</label>
+                                    <input type="password" placeholder="Password" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block">signup</button>
+                                </div>
+                            </fieldset>
+                         </form>
+                     </div>
+
+                     <div class="col-lg-6">
+                         <form action="" method="">
+                             <fieldset>
+                                 <legend class="text-center">Login</legend>
+                                 <div class="form-group">
+                                     <label for="">username</label>
+                                     <input type="text" placeholder="Username" class="form-control">
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="">password</label>
+                                     <input type="password" placeholder="Password" class="form-control">
+                                 </div>
+
+
+                                 <div class="form-group">
+                                     <a href="#" class="text-danger" style="margin: 10px 0;display: block;">
+                                         Forget Password
+                                     </a>
+                                 </div>
+
+                               
+                                     <div class="checkbox">
+                                         <label>
+                                             <input type="checkbox">
+                                             <strong>Remember Me</strong>
+                                         </label>
+                                     </div>
+                             
+
+                                 <div class="form-group">
+                                     <button class="btn btn-primary btn-block" style="margin-top: 20px">login</button>
+                                 </div>
+                             </fieldset>
+                         </form>
+                     </div>
+                 </div>
+               </div>
+           </div>
+       </div>
+
+   </section>
+
+
+
+
+
+
+
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 no-padding">
+              <header class="jumbotron text-center no-radius">
+                  <h1>Heading</h1>
+              </header>
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12 no-padding">
+              <nav class="navbar navbar-inverse navbar-custom no-radius" >
+                  <div class="navbar-header">
+                      <a href="#" class="navbar-brand">
+                         Brand
+                      </a>
+                      <button class="navbar-toggle" data-toggle="collapse"  data-target=".collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                  </div>
+
+                  <div class="collapse navbar-collapse" data-hover="dropdown" data-animations="pulse pulse pulse pulse">
+                      <ul class="nav navbar-nav">
+                          <li><a href="#">Home</a></li>
+                          <li  class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="#">product#1</a></li>
+                                 <li><a href="#">product#2</a></li>
+                                 <li class="divider"></li>
+                                 <li><a href="#">product#3</a></li>
+                             </ul>
+                          </li>
+                          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">service#1</a></li>
+                                  <li><a href="#">service#2</a></li>
+                                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">service#3</a>
+                                      <ul class="dropdown-menu">
+                                          <li><a href="#">sub__service#1</a></li>
+                                          <li><a href="#">sub__service#2</a></li>
+
+                                          <li><a href="#">sub__service#3</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Contact us</a></li>
+                      </ul>
+
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="" data-target="#modal_1" data-toggle="modal">
+                              <i class="fa fa-user fa-2x"></i>
+                          </a></li>
+
+                          <li style="position:relative;"><a href="">
+                              <i class="fa fa-shopping-basket fa-2x"></i>
+                          </a><span class="badge my-badge">2</span></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+     <!--slider carousel-->
+      <div class="row" style="margin: 15px 0">
+          <div class="col-md-8 col-sm-6">
+              <section class="carousel slide" id="my_slider" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-slide-to="0" data-target="#my_slider" class="active"></li>
+                      <li data-slide-to="1" data-target="#my_slider"></li>
+                      <li data-slide-to="2" data-target="#my_slider"></li>
+                      <li data-slide-to="3" data-target="#my_slider"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="item active">
+                          <img src="images/01.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h3>this is Pic #1</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, maiores!</p>
+                          </div>
+                      </div>
+
+                      <div class="item">
+                          <img src="images/02.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h3>this is Pic #2</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adips!</p>
+                          </div>
+                      </div>
+
+
+                      <div class="item">
+                          <img src="images/03.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h3>this is Pic #3</h3>
+                              <p>Lorem ipsum dolor sit amet!</p>
+                          </div>
+                      </div>
+
+                      <div class="item">
+                          <img src="images/04.jpg" alt="">
+                          <div class="carousel-caption">
+                              <h3>this is Pic #4</h3>
+                              <p>Lorem ipsum dolor sit amet!</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <a href="#my_slider" class="carousel-control right" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+
+                  <a href="#my_slider" class="carousel-control left" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+
+              </section>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+                <div class="panel panel-default">
+                    <header class="panel-heading text-center">
+                        <h3 class="panel-title">Skills</h3>
+                    </header>
+                    <div class="panel-body">
+                       <div class="row">
+                           <span class="my_label col-sm-2 label label-success">HTML</span>
+                           <div class="progress col-sm-10">
+                               <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 84%">84%</div>
+                           </div>
+                       </div>
+
+                        <div class="row">
+                            <span class="my_label col-sm-2 label label-danger">CSS</span>
+                            <div class="progress col-sm-10">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 95%">95%</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span class="my_label col-sm-2 label label-warning">JS</span>
+                            <div class="progress col-sm-10">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 70%">70%</div>
+                            </div>
+                        </div>
+
+                       <div class="row">
+                           <span class="my_label col-sm-2 label label-info">PHP</span>
+                           <div class="progress col-sm-10">
+                               <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 88%">88%</div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-default btn-block">find More..</button>
+                    </div>
+                </div>
+          </div>
+      </div>
+
+      <div class="row row-product">
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#1</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/p1.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#2</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/p2.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#3</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/p3.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#4</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/p4.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <div class="row row-product">
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#1</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/t1.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#2</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/t2.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#3</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/t3.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title text-center">Shirt#4</h3>
+                  </div>
+                  <div class="panel-body">
+                      <img src="images/t4.webp" alt="">
+                  </div>
+                  <div class="panel-footer clearfix">
+                      <a href="" class="pull-left"><i class="fa fa-shopping-cart"></i></a>
+                      <a href="" class="pull-right"><i class="fa fa-info"></i></a>
+                  </div>
+                  <div class="panel-footer clearfix text-center">
+
+                      <strong class="pull-left"><i class="fa fa-money"></i> <span>Price</span></strong>
+                      <strong class="pull-right">
+
+                          <small><del>100,000,000</del></small>
+                          <small><ins>999,000</ins></small>
+                          <small><i class="fa fa-euro"></i></small>
+
+                      </strong>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <strong>Search..</strong>
+                  </div>
+                  <div class="panel-body">
+                      <form action="">
+                          <div class="form-group input-group has-warning">
+                              <div class="input-group-addon">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </div>
+                              <input type="search" class="form-control">
+                              <div class="input-group-btn">
+                                  <button class="btn btn-warning">
+                                      <i class="glyphicon glyphicon-ok"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                  <nav>
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs nav-tabs-justified" role="tablist">
+                          <li  class="active"><a href="#home" data-toggle="pill">Home</a></li>
+                          <li ><a href="#profile" data-toggle="tab">Profile</a></li>
+                          <li ><a href="#messages" data-toggle="tab">Messages</a></li>
+                          <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                          <div  class="tab-pane fade in active" id="home">
+                              <p class="">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, harum illum ipsa iure odio temporibus ullam veniam voluptas! Ab ad aliquid at illum ipsam mollitia vel. Ab amet atque labore non quasi. Natus, rem vero. Consequuntur illo numquam quis saepe sed? Cumque deserunt eveniet explicabo mollitia natus nostrum ratione voluptatibus.
+                              </p>
+                          </div>
+                          <div  class="tab-pane fade " id="profile">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis cum debitis dignissimos iure natus perspiciatis repellendus. Aliquam aspernatur molestias nostrum quia reprehenderit velit! Consectetur fugiat odio rerum totam voluptas, voluptatum! Deserunt, facilis itaque magni modi porro qui reiciendis saepe?</p>
+                          </div>
+                          <div  class="tab-pane fade " id="messages">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam blanditiis cum debitis eligendi id illum ipsum iure iusto minus, mollitia, nobis provident quas, reiciendis soluta suscipit temporibus ullam vel veniam voluptate. Aspernatur atque beatae culpa deserunt dolor dolore doloribus dolorum eligendi enim error ex facere fugit harum illum impedit incidunt inventore maiores minus molestias nam neque nostrum odio, odit officia omnis pariatur quisquam quod repellat sunt unde veritatis, voluptatibus?</p>
+                          </div>
+                          <div  class="tab-pane fade " id="settings">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aspernatur consequuntur debitis dolor dolores, eaque illum maxime, nihil perferendis provident quaerat quo repellat saepe similique suscipit ullam voluptas voluptates. Aliquam at, atque consequuntur deserunt dicta excepturi molestiae pariatur quas quos sapiente tempore voluptatem. Ipsam magni quidem tenetur! Ad autem deleniti facilis illo illum ipsam iure molestiae nam! Doloribus, vel vero.</p>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          <div class="col-md-8">
+
+              <!-- Slideshow 4 -->
+              <div class="callbacks_container">
+                  <ul class="rslides" id="slider4">
+                      <li>
+                          <img src="images/01.jpg" alt="">
+                          <p class="caption">This is a caption</p>
+                      </li>
+                      <li>
+                          <img src="images/02.jpg" alt="">
+                          <p class="caption">This is another caption</p>
+                      </li>
+                      <li>
+                          <img src="images/03.jpg" alt="">
+                          <p class="caption">The third caption</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-12" style="padding: 0">
+              <footer class="jumbotron footer" style="margin: 0 ">
+
+                  <h1 class="text-light">Footer</h1>
+              </footer>
+          </div>
+      </div>
+
+      </div>
+
+
+
+<!--Event Propagation-->
+  <!--bubbling & capturing-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="ResponsiveSlides/responsiveslides.js"></script>
+  <script src="plugin-dropdown__hover/js/bootstrap-dropdownhover.min.js"></script>
+
+
+  <!--
+
+  -->
+
+  <script>
+
+
+
+$(function (){
+    $("#my_slider").carousel({
+        interval: 3000 ,
+        pause: null
+    });
+
+// Slideshow 4
+    $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+
+    });
+
+    $(".panel-body > img").addClass("img-responsive img-custom")
+
+    $(".row-product .panel > .panel-footer a").addClass("text-muted fa-2x");
+
+})
+  </script>
+</body>
+</html>
